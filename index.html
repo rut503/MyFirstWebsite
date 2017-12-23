@@ -5,6 +5,9 @@
     <!-- API link for Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Aladin|Berkshire+Swash|Courgette|Denk+One|Fredoka+One|Fugaz+One|Knewave|Lemon|Lily+Script+One|Lobster+Two|Maiden+Orange|Pacifico|Pattaya|Teko" rel="stylesheet">
 
+    <!-- Font Awesome External Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="Web%20Resume/CSS/font-awesome.min.css">
+
     <!-- Main Page External Style Sheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
 
@@ -15,7 +18,7 @@
     <title>Rut</title>
 
 </head>
-<body onload="showQuote()">
+<body onload="putRocketsInDivContainer(); differentSizedRockets(); assignRocketPositions();  showQuote()">
 
     <!-- ------------------------------------------------  Menu Button --------------------------------------- -->
     <button class="menu_button" id="menu_button" type="button" onclick="openNavBar()"></button>
@@ -27,7 +30,7 @@
         <div class="BV1_container">
 
             <video class="BV1_First" poster="Resources/BV%20-%200%20Poster.png" autoplay loop style="filter: brightness(0.7);">
-                <!--<source src="Resources/BV - 0 - w:o sound.mp4" type="video/mp4">-->
+                <!--<source src="Resources/BV - 0 w:o sound.mp4" type="video/mp4">-->
             </video>
 
             <div class="BV1_welcome"></div>
@@ -43,24 +46,29 @@
 
             <div class="section_titles themes" id="themes">THEMES</div>
 
-            <div class="theme_thumbnails">
-                <div class="theme_column-1">
-                    <button type="button" class="theme_button-1" onclick="changeThemeColors1()" style="background-image: url(Resources/Theme_Thumbnail_1.png)"></button>
-                    <button type="button" class="theme_button-1" onclick="changeThemeColors4()" style="background-image: url(Resources/Theme_Thumbnail_4.png)"></button>
-                    <button type="button" class="theme_button-1" style="background-image: url(Resources/Game_Poster_12.png)"></button>
+            <div class="rockets1_limit_container">
+
+                <div class="theme_thumbnails">
+                    <div class="theme_column-1">
+                        <button type="button" class="theme_button-1" onclick="changeThemeColors1()" style="background-image: url(Resources/Theme_Thumbnail_1.png)"></button>
+                        <button type="button" class="theme_button-1" onclick="changeThemeColors4()" style="background-image: url(Resources/Theme_Thumbnail_4.png)"></button>
+                        <button type="button" class="theme_button-1" style="background-image: url(Resources/Game_Poster_12.png)"></button>
+                    </div>
+
+                    <div class="theme_column-2">
+                        <button type="button" class="theme_button-2" onclick="changeThemeColors2()" style="background-image: url(Resources/Theme_Thumbnail_2.png)"></button>
+                        <button type="button" class="theme_button-2" onclick="changeThemeColors5()" style="background-image: url(Resources/Theme_Thumbnail_5.png)"></button>
+                        <button type="button" class="theme_button-2" style="background-image: url(Resources/Game_Poster_12.png)"></button>
+                    </div>
+
+                    <div class="theme_column-3">
+                        <button type="button" class="theme_button-3" onclick="changeThemeColors3()" style="background-image: url(Resources/Theme_Thumbnail_3.png)"></button>
+                        <button type="button" class="theme_button-3" onclick="changeThemeColors6()" style="background-image: url(Resources/Theme_Thumbnail_6.png)"></button>
+                        <button type="button" class="theme_button-3" style="background-image: url(Resources/Game_Poster_12.png)"></button>
+                    </div>
                 </div>
 
-                <div class="theme_column-2">
-                    <button type="button" class="theme_button-2" onclick="changeThemeColors2()" style="background-image: url(Resources/Theme_Thumbnail_2.png)"></button>
-                    <button type="button" class="theme_button-2" onclick="changeThemeColors5()" style="background-image: url(Resources/Theme_Thumbnail_5.png)"></button>
-                    <button type="button" class="theme_button-2" style="background-image: url(Resources/Game_Poster_12.png)"></button>
-                </div>
-
-                <div class="theme_column-3">
-                    <button type="button" class="theme_button-3" onclick="changeThemeColors3()" style="background-image: url(Resources/Theme_Thumbnail_3.png)"></button>
-                    <button type="button" class="theme_button-3" onclick="changeThemeColors6()" style="background-image: url(Resources/Theme_Thumbnail_6.png)"></button>
-                    <button type="button" class="theme_button-3" style="background-image: url(Resources/Game_Poster_12.png)"></button>
-                </div>
+                <div class="rockets1_container" id="my_name_is_rut"></div>
             </div>
 
             <!--=====================================================================================================================-->
@@ -131,8 +139,8 @@
 
                             <!-- ----------------- Background Video 2 ----------------- -->
             <div class="BV1_container">
-                <video class="BV1_Second" poster="Resources/BV%20--%200%20Poster.png" autoplay loop>
-                    <source src="Resources/BV -- 5.mp4" type="video/mp4">
+                <video class="BV1_Second" poster="Resources/BV%20-%200%20Poster.png" autoplay loop>
+                    <!--<source src="Resources/BV - 5.mp4" type="video/mp4">-->
                 </video>
 
                 <!--<div class="BV1_text">-->
@@ -190,6 +198,23 @@
             </div>
 
             <br><br>
+
+            <!--###################################################################################################################-->
+
+            <div class="rotating_shapes">
+                <div class="test shape1"><i class="fa fa-rocket"></i></div>
+                <div class="test shape2"><i class="fa fa-fighter-jet"></i></div>
+                <div class="test shape3"><i class="fa fa-space-shuttle"></i></div>
+                <div class="test shape4"><i class="fa fa-plane"></i></div>
+            </div>
+
+            <button type="button" onclick="showRandomPositions()">Testing</button>
+
+            <p id="display"></p>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <!--###################################################################################################################-->
 
         </div>
 
