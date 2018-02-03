@@ -1,0 +1,9 @@
+
+.contact_info_container{
+    display: block;
+}
+
+.game_submission_message{
+    font-size: 17px;
+    /*line-height: 2vw;*/
+}
