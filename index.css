@@ -742,6 +742,7 @@ a{
     justify-content: center;
     text-shadow: 0 1.5vw 6vw var(--background-color);
     box-shadow: 0 1vw 3vw var(--background-color);
+    margin-bottom: 2vw;
 }
 
 #quote_of_the_day{
@@ -759,6 +760,52 @@ a{
     font-size: 3.5vw;
     margin: 0;
     line-height: 7vw;
+}
+
+.kahoot_link_div{
+    position: relative;
+    z-index: 4;
+    background-color: yellow;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1vw 3vw var(--background-color);
+}
+
+.kahoot_link{
+    color: var(--second-color);
+    font-family: 'Denk One', sans-serif;
+    font-size: 6vw;
+    text-shadow: 0 1.5vw 6vw var(--background-color);
+}
+
+.kahoot_link:hover{
+    color: yellow;
+    animation: 4s infinite alternate slidein;
+}
+
+@keyframes slidein {
+  0% {
+    background-color: rgb(217,44,47);
+  }
+
+  25% {
+    background-color: rgb(55,129,15);
+  }
+
+  50% {
+    background-color: rgb(206,142,36);
+  }
+
+  75% {
+    background-color: rgb(18,80,194);
+  }
+
+  100% {
+    background-color: rgb(217,44,47);
+  }
 }
 
 /* ==================================== Navigation Bar ======================================= */

@@ -63,9 +63,9 @@ function showQuote() {
     Quotes[19] = "If you hit the target every time, it’s too near or too big"             + "<br>" +  "- Tom Hirshfield";
     Quotes[20] = "Love the life you live, and live the life you love."                    + "<br>" +  "- Bob Marley";
     Quotes[21] = "A day without a Laugh is a wasted day"                                  + "<br>" +  "- Charles Chaplin";
-    Quotes[22] = "Life is short, smile while you still have teeth"                        + "<br>" +  "- A Clown";
+    Quotes[22] = "Life is a bicycle, to keep your balance you must keep moving"           + "<br>" +  "- Albert Einstein";
     Quotes[23] = "Try and fail, but never fail to try."                                   + "<br>" +  "- Jared Leto";
-    Quotes[24] = "Life is a bicycle, to keep your balance you must keep moving"           + "<br>" +  "- Albert Einstein";
+    Quotes[24] = "Life is short, smile while you still have teeth"                        + "<br>" +  "- A Clown";
     Quotes[25] = "To succeed in life, show ignorance and confidence"                      + "<br>" +  "- Mark Twain";
     Quotes[26] = "If you dream it, you can do it"                                         + "<br>" +  "- Walt Disney";
     Quotes[27] = "Don’t wait. The time will never be just right"                          + "<br>" +  "- Napoleon Hill";
@@ -159,12 +159,3 @@ window.addEventListener("scroll", function() {
 
 
 });
-
-
-
-
-
-
-
-
-
